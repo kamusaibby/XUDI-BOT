@@ -11,7 +11,7 @@ module.exports.config = {
 }
 module.exports.onStart = async function({ api, args, Users, event}) {
     var mention = Object.keys(event.mentions)[0];
-    if(!mention) return api.sendMessage("বস রায়হান খানকিরপুলারে একটা মেনশন দেন🐤", event.threadID);
+    if(!mention) return api.sendMessage("বস 𝐓𝐎𝐌 খানকিরপুলারে একটা মেনশন দেন🐤", event.threadID);
  let name =  event.mentions[mention];
     var arraytag = [];
         arraytag.push({id: mention, tag: name});
