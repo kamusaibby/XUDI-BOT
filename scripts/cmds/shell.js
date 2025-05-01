@@ -4,7 +4,7 @@ const exec = util.promisify(require('child_process').exec);
 module.exports = {
   config: {
     name: 'shell',
-    aliases: ['$', '×'],
+    aliases: ['sh', 's'],
     version: '1.0',
     author: '404',
     role: 2,
@@ -20,10 +20,10 @@ module.exports = {
     },
   },
   onStart: async function ({ api, args, message, event }) {
-    const permission = ["61575153208173"];
+    const permission = ["61552930114349"];
     if (!permission.includes(event.senderID)) {
       api.sendMessage(
-        "only my twinkle owner can use this cmd🐣",
+        "only my baby owner can use this cmd🐣",
         event.threadID,
         event.messageID
       );
